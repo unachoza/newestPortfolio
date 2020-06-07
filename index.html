@@ -5,7 +5,7 @@
 		<!-- Basic Page Needs
   ================================================== -->
 		<meta charset="utf-8">
-		<title>Selene | Creative HTML5 Portfolio Template</title>
+		<title>Portfolio from a Template</title>
 		<meta name="description" content="">
 		<meta name="author" content="">
 
@@ -46,6 +46,7 @@
 
 		<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
 
 	</head>
 	<body>
@@ -58,6 +59,8 @@
 				This is the Menu<span><!-- used to create the menu icon --></span>
 			</a> <!-- .cd-nav-trigger -->
 		</div>
+
+
 		<nav class="cd-nav-container" id="cd-nav">
 			<header>
 				<a href="#0" class="cd-close-nav">Close</a>
@@ -113,6 +116,7 @@
 				</li>
 			</ul> <!-- .cd-3d-nav -->
 		</nav>
+
 		<div class="section section-padding-top-bottom white-background" id="work">
 			<!-- ///////Container for the Projects Header ////// -->
 			<div class="container">
@@ -122,18 +126,18 @@
 					</div>
 				</div>
 
-				THIS ARE THE PROJECT CATEGORIES
-				GAMES
-				CLONES - NOT REAL
-				REAL REAL USE IT
-				DESIGN / UI
-				MISC
+				<!-- THIS ARE THE PROJECT CATEGORIES -->
+				<!-- GAMES -->
+				<!-- CLONES - NOT REAL -->
+				<!-- REAL REAL USE IT -->
+				<!-- DESIGN / UI -->
+				<!-- MISC -->
 				<div class="sixteen columns">
 					<div id="portfolio-filter">
 						<ul id="filter">
 							<li><a href="#" class="current" data-filter="*" title="">all</a></li>
 							<li><a href="#" data-filter=".game" title="">Games</a></li>
-							<li><a href="#" data-filter=".real" title="">Real - Use It</a></li>
+							<li><a href="#" data-filter=".real" title="">Real [Use It!]</a></li>
 							<li><a href="#" data-filter=".ui" title="">Design & UI/UX</a></li>
 							<li><a href="#" data-filter=".clone" title="">Clones</a></li>
 							<li><a href="#" data-filter=".misc" title="">Miscellaneous</a></li>
@@ -142,125 +146,204 @@
 				</div>
 			</div>
 
+	<div class="cd-overlay"><!-- shadow layer visible when navigation is visible --></div>
 
+</div>
 
+	<div class="scroll-to-top"></div>
+	
+<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript"> 
+(function($) { "use strict";          
+			jQuery(document).ready(function() {
+				var offset = 350;
+				var duration = 800;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.scroll-to-top').fadeIn(duration);
+					} else {
+						jQuery('.scroll-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.scroll-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+})(jQuery);
+</script>
 
 			<div id="projects-grid">
-				THIS IS A PROJECT CONTAINER - SUSAN SAYS
+				<!-- THIS IS A PROJECT CONTAINER - SUSAN SAYS -->
 				<a href="http://susans.surge.sh/" class="animsition-link">
+					<!-- put filter category here -->
 					<div class="portfolio-box-1 game">
 						<div class="mask-1"></div>
 
 						/////This is where I put my project img
 						<img
 							src="https://res.cloudinary.com/dh41vh9dx/image/upload/c_scale,h_140,w_230/v1546220914/susan-sarandon.jpg"
-							alt="">
-						<h6>Susan Says/h6>
-							<p>branding</p>
-						</div>
-					</a>
+							alt="Susan Sarandon image representing Susan Says Game">
+						<h6>Susan Says</h6>
+						<p>Game</p>
+					</div>
+				</a>
 
 
-					THIS IS A PROJECT CONTAINER - CANCEL R KELLY
-					<a href="project-2.html" class="animsition-link">
-						<div class="portfolio-box-1 photo web">
-							<div class="mask-1"></div>
+				<!-- THIS IS A PROJECT CONTAINER - CANCEL R KELLY -->
+				<a href="http://spotify-cancel.herokuapp.com/" class="animsition-link">
+					<!-- put filter category here -->
+					<div class="portfolio-box-1 real">
+						<div class="mask-1"></div>
+						<!-- /////This is where I put my project img -->
+						<img
+							src="https://res.cloudinary.com/dh41vh9dx/image/upload/v1574386294/Screen_Shot_2019-11-21_at_8.31.22_PM.png"
+							alt="landing page for Cancel R Kelly App">
+						<h6>Cancel R Kelly</h6>
+						<p>Use this; It's real!</p>
+					</div>
+				</a>
 
 
-
-							/////This is where I put my project img
-							<img src="images/portfolio/2.jpg" alt="">
-							<h6>Bulb Fiction</h6>
-							<p>photo</p>
-						</div>
-					</a>
-					THIS IS A PROJECT CONTAINER
-					<a href="project-3.html" class="animsition-link">
-						<div class="portfolio-box-1 branding">
-							<div class="mask-1"></div>
-
-
-
-							<!-- /////This is where I put my project img -->
-							<img src="images/portfolio/3.jpg" alt="">
-							<!-- /////This is where I put my project Title -->
-							<h6>Hang Around</h6>
-							<p>branding</p>
-						</div>
-					</a>
-					THIS IS A PROJECT CONTAINER
-					<a href="project-1.html" class="animsition-link">
-						<div class="portfolio-box-1 motion">
-							<div class="mask-1"></div>
+				THIS IS A PROJECT CONTAINER
+				<a href="https://pinnacle-clothing.herokuapp.com/" class="animsition-link">
+					<!-- put filter category here -->
+					<div class="portfolio-box-1 branding">
+						<div class="mask-1"></div>
 
 
 
-							<!-- /////This is where I put my project img -->
-							<img src="images/portfolio/4.jpg" alt="">
-							<!-- /////This is where I put my project Title -->
-							<h6>SLICE</h6>
-							<p>motion</p>
-						</div>
-					</a>
-					THIS IS A PROJECT CONTAINER
-					<a href="project-2.html" class="animsition-link">
-						<div class="portfolio-box-1 web">
-							<div class="mask-1"></div>
+						<!-- /////This is where I put my project img -->
+						<img
+							src="https://res.cloudinary.com/dh41vh9dx/image/upload/v1580794434/Screen_Shot_2020-02-04_at_12.32.36_AM.png"
+							alt="landing page for Clothing Store Clone">
+						<!-- /////This is where I put my project Title -->
+						<h6>Pinnacle Clothing</h6>
+						<p>Clone of a mega trendy clothing store</p>
+					</div>
+				</a>
+				THIS IS A PROJECT CONTAINER
+				<a href="project-1.html" class="animsition-link">
+					<!-- put filter category here -->
+					<div class="portfolio-box-1 motion">
+						<div class="mask-1"></div>
 
 
 
-							<!-- /////This is where I put my project img -->
-							<img src="images/portfolio/5.jpg" alt="">
-							<!-- /////This is where I put my project Title -->
-							<h6>Tube Chair</h6>
-							<p>web</p>
-						</div>
-					</a>
-					THIS IS A PROJECT CONTAINER
-					<a href="project-3.html" class="animsition-link">
-						<div class="portfolio-box-1 motion">
-							<div class="mask-1"></div>
+						<!-- /////This is where I put my project img -->
+						<img src="images/portfolio/4.jpg" alt="">
+						<!-- /////This is where I put my project Title -->
+						<h6>SLICE</h6>
+						<p>motion</p>
+					</div>
+				</a>
+				THIS IS A PROJECT CONTAINER
+				<a href="project-2.html" class="animsition-link">
+					<!-- put filter category here -->
+					<div class="portfolio-box-1 web">
+						<div class="mask-1"></div>
 
 
 
-							<!-- /////This is where I put my project img -->
-							<img src="images/portfolio/6.jpg" alt="">
-							<!-- /////This is where I put my project Title -->
-							<h6>Turn Around</h6>
-							<p>motion</p>
-						</div>
-					</a>
-					THIS IS A PROJECT CONTAINER
-					<a href="project-1.html" class="animsition-link">
-						<div class="portfolio-box-1 photo">
-							<div class="mask-1"></div>
-							<img src="images/portfolio/7.jpg" alt="">
-							<h6>Pebble</h6>
-							<p>photo</p>
-						</div>
-					</a>
-					THIS IS A PROJECT CONTAINER
-					<a href="project-2.html" class="animsition-link">
-						<div class="portfolio-box-1 branding">
-							<div class="mask-1"></div>
-							<img src="images/portfolio/8.jpg" alt="">
-							<h6>Shanghay Chair</h6>
-							<p>branding</p>
-						</div>
-					</a>
-					THIS IS A PROJECT CONTAINER
-					<a href="project-3.html" class="animsition-link">
-						<div class="portfolio-box-1 web">
-							<div class="mask-1"></div>
-							<img src="images/portfolio/9.jpg" alt="">
-							<h6>Tracks Leather</h6>
-							<p>web</p>
-						</div>
-					</a>
+						<!-- /////This is where I put my project img -->
+						<img src="images/portfolio/5.jpg" alt="">
+						<!-- /////This is where I put my project Title -->
+						<h6>Tube Chair</h6>
+						<p>web</p>
+					</div>
+				</a>
+				THIS IS A PROJECT CONTAINER
+				<a href="project-3.html" class="animsition-link">
+					<!-- put filter category here -->
+					<div class="portfolio-box-1 motion">
+						<div class="mask-1"></div>
 
-				</div>
+
+
+						<!-- /////This is where I put my project img -->
+						<img src="images/portfolio/6.jpg" alt="">
+						<!-- /////This is where I put my project Title -->
+						<h6>Turn Around</h6>
+						<p>motion</p>
+					</div>
+				</a>
+				THIS IS A PROJECT CONTAINER
+				<a href="project-1.html" class="animsition-link">
+					<!-- put filter category here -->
+					<div class="portfolio-box-1 photo">
+						<div class="mask-1"></div>
+						<img src="images/portfolio/7.jpg" alt="">
+						<h6>Pebble</h6>
+						<p>photo</p>
+					</div>
+				</a>
+				THIS IS A PROJECT CONTAINER
+				<a href="project-2.html" class="animsition-link">
+					<!-- put filter category here -->
+					<div class="portfolio-box-1 branding">
+						<div class="mask-1"></div>
+						<img src="images/portfolio/8.jpg" alt="">
+						<h6>Shanghay Chair</h6>
+						<p>branding</p>
+					</div>
+				</a>
+				THIS IS A PROJECT CONTAINER
+				<a href="project-3.html" class="animsition-link">
+					<!-- put filter category here -->
+					<div class="portfolio-box-1 web">
+						<div class="mask-1"></div>
+						<img src="images/portfolio/9.jpg" alt="">
+						<h6>Tracks Leather</h6>
+						<p>web</p>
+					</div>
+				</a>
 
 			</div>
-			<!-- </div> -->
-		</body>
-	</html>
+
+
+
+
+
+
+	//////////// COUNTERS //////////////////////////////////
+	<div class="section section-padding-top-bottom-small black-background">							
+				<div class="container">
+					<div class="four columns">	
+						<div class="counter-wrap">	
+							<div class="counter-numb"><span class="counter-facts">726</span></div>
+							<div class="counter-line"></div>
+							<p><span>&#xf272;</span> Cups Of Coffee</p>	
+						</div>	
+					</div>	
+					<div class="four columns">	
+						<div class="counter-wrap">	
+							<div class="counter-numb"><span class="counter-facts">64</span></div>
+							<div class="counter-line"></div>
+							<p><span>&#xf340;</span> Finished Projects</p>	
+						</div>	
+					</div>		
+					<div class="four columns">	
+						<div class="counter-wrap">	
+							<div class="counter-numb"><span class="counter-facts">8471</span></div>
+							<div class="counter-line"></div>
+							<p><span>&#xf271;</span> Lines Of Code</p>	
+						</div>	
+					</div>	
+					<div class="four columns">	
+						<div class="counter-wrap">	
+							<div class="counter-numb"><span class="counter-facts">35</span></div>
+							<div class="counter-line"></div>
+							<p><span>&#xf368;</span> Awards Won</p>	
+						</div>	
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- </div> -->
+	</body>
+</html>
