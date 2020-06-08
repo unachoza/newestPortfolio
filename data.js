@@ -47,8 +47,22 @@ export const PROJECTS = [
 
     githubLink: 'https://github.com/unachoza/e-commerce',
   },
-  {
+    {
     id: 4,
+    name: 'Nature Tours',
+    projectLink: 'http://amazinguinatours.surge.sh/',
+    imageLinks: [
+      'https://res.cloudinary.com/dh41vh9dx/image/upload/v1582638321/Screen_Shot_2020-02-25_at_8.44.43_AM.png',
+      'https://res.cloudinary.com/dh41vh9dx/image/upload/v1582638324/Screen_Shot_2020-02-25_at_8.44.19_AM.png',
+    ],
+    description:
+      'Nature tours booking website. This is a non-functional site showcaseing addvanced styling techniques: SCSS architecture; The 7-1 rule, component-based design, the BEM methodolog, annimations, checkbox hack, css grid, and more.',
+
+    githubLink: 'https://github.com/unachoza/AdvancedCSS/tree/master/Natours',
+  },
+  
+  {
+    id: 5,
     name: 'Face Recognition AI',
     projectLink: 'https://image-recognition-w.herokuapp.com/',
     imageLinks: [
@@ -60,7 +74,7 @@ export const PROJECTS = [
     githubLink: 'https://github.com/unachoza/Recognition-Fullstack-',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Github Respo Search',
     projectLink: 'https://searchinggithub.herokuapp.com/',
     imageLinks: [
@@ -71,7 +85,7 @@ export const PROJECTS = [
     githubLink: 'https://github.com/unachoza/PrivateGithubSearch',
   },
   {
-    id: 6,
+    id: 7,
     name: 'These Friends',
     projectLink: 'https://cat-friends.herokuapp.com/',
     imageLinks: [
@@ -83,7 +97,7 @@ export const PROJECTS = [
     githubLink: 'https://github.com/unachoza/cat-friends',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Stream Videos',
     projectLink: 'https://this-youtube-clone.herokuapp.com/',
     imageLinks: [
@@ -93,7 +107,7 @@ export const PROJECTS = [
     githubLink: 'https://github.com/unachoza/search-video',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Image Search',
     projectLink: 'https://searching-images.herokuapp.com/',
     imageLinks: [
@@ -104,7 +118,7 @@ export const PROJECTS = [
     githubLink: 'https://github.com/unachoza/Image-Search',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Flower Finder',
     projectLink: 'http://interestingflowers.surge.sh/',
     imageLinks: [
@@ -115,7 +129,7 @@ export const PROJECTS = [
     githubLink: 'https://github.com/unachoza/FlowerFinder',
   },
   {
-    id: 10,
+    id: 11,
     name: 'Magic 8 Ball',
     projectLink: 'http://askmagic8ball.surge.sh/',
     imageLinks: [
@@ -126,7 +140,7 @@ export const PROJECTS = [
     githubLink: 'https://github.com/unachoza/Magic-8-Ball',
   },
   {
-    id: 11,
+    id: 12,
     name: 'Garden Party',
     projectLink: 'http://thesearethedetailsforthisparty.surge.sh/',
     imageLinks: ['https://res.cloudinary.com/dh41vh9dx/image/upload/c_scale,h_140,w_247/v1550016489/Screen_Shot_2019-02-12_at_7.06.34_PM.png'],
@@ -135,7 +149,7 @@ export const PROJECTS = [
     githubLink: 'https://github.com/unachoza/Garden-Party-Invite',
   },
   {
-    id: 12,
+    id: 13,
     name: 'Book Club',
     projectLink: '',
     imageLinks: ['https://res.cloudinary.com/dh41vh9dx/image/upload/c_scale,w_40/v1546887547/angle-double-down.png'],
