@@ -86,7 +86,7 @@ svg {
   width: 100%;
   top: 0;
   left: 0;
-  height: 200px;
+  height: 100px;
   background: rgba(255, 255, 255, 0.85);
   z-index: 3;
   overflow: hidden;
@@ -99,10 +99,10 @@ svg {
 }
 img.logo {
   position: absolute;
-  top: 24px;
+  top: 10px;
   left: 5%;
   z-index: 3;
-  height: 20px;
+  height: 80px;
   width: auto;
   display: block;
   -webkit-transition: all 300ms linear;
@@ -229,7 +229,7 @@ xnavigation
   z-index: 4;
   top: 0;
   right: 0;
-  width: 80%;
+  /* width: 80%; */
   height: 100%;
   overflow-y: auto;
   background-color: #ffffff;
@@ -1314,7 +1314,9 @@ a.top-button {
   overflow: hidden;
 }
 .team-wrap img {
-  width: 100%;
+    width: 375px;
+    height: 349px;
+  /* width: 100%; */
   display: block;
   margin-bottom: 20px;
 }
