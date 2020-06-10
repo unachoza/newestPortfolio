@@ -1,11 +1,7 @@
 jQuery(document).ready(function ($) {
-  alert('js is working');
-});
-
-jQuery(document).ready(function ($) {
   //open navigation clicking the menu icon
-  alert('Hello! I am an alert box!!');
   $('.cd-nav-trigger').on('click', function (event) {
+    console.log('clicked');
     event.preventDefault();
     toggleNav(true);
   });

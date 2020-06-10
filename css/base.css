@@ -275,7 +275,6 @@ a:visited {
 a:hover,
 a:focus {
   color: #16a085;
-  background-color: #000;
 }
 p a,
 p a:visited {
@@ -292,7 +291,9 @@ ul,
 ol {
 }
 ul {
-  list-style: none outside;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 ol {
   list-style: decimal;

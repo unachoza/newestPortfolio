@@ -251,6 +251,7 @@ xnavigation
   transition: transform 0.4s 0s, box-shadow 0s 0.4s;
 }
 .cd-nav-container.is-visible {
+  width: 500px;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -458,11 +459,11 @@ xnavigation
 }
 @media only screen and (min-width: 1024px) {
   .cd-nav li {
-    width: 33.33%;
+    width: 20vw;
     float: left;
+    height: calc((100vh - 116px) / 6);
     /* 116px is the navigation header height  and the menu items will be allocated in 2 rows */
-    height: calc((100vh - 116px) / 2);
-    min-height: 250px;
+    /* min-height: 250px; */
   }
   .cd-nav li:nth-of-type(2n) {
     border-right-width: 1px;
@@ -1314,8 +1315,8 @@ a.top-button {
   overflow: hidden;
 }
 .team-wrap img {
-    width: 375px;
-    height: 349px;
+  width: 375px;
+  height: 349px;
   /* width: 100%; */
   display: block;
   margin-bottom: 20px;
