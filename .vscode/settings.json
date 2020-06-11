@@ -1,6 +1,8 @@
 {
- "editor.fontLigatures": null,
- "workbench.editorAssociations": [
-
-]
+	"editor.fontLigatures": null,
+	"workbench.editorAssociations": [],
+	"prettier.useTabs": true,
+	"files.autoSave": "onFocusChange",
+	"editor.formatOnSave": true,
+	"files.autoSaveDelay": 0
 }
