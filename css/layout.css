@@ -755,13 +755,13 @@ main.scale-down {
   overflow: hidden;
 }
 #owl-top .item.top-image-1 {
-  background-image: url('../images/slider/1.jpg');
+  background-image: url('../images/slider/eyess.png');
 }
 #owl-top .item.top-image-2 {
-  background-image: url('../images/slider/2.jpg');
+  background-image: url('../images/slider/eyess.png');
 }
 #owl-top .item.top-image-3 {
-  background-image: url('../images/slider/3.jpg');
+  background-image: url('../images/slider/eyess.png');
 }
 
 #owl-top.owl-theme .owl-controls .owl-buttons .owl-prev {
