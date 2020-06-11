@@ -234,11 +234,11 @@ xnavigation
   overflow-y: auto;
   background-color: #ffffff;
   /* Force Hardware Acceleration in WebKit */
-  -webkit-transform: translateZ(0);
+  /* -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
-  transform: translateZ(0);
+  transform: translateZ(0); */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateX(100%);
@@ -248,7 +248,7 @@ xnavigation
   transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.4s 0s, box-shadow 0s 0.4s;
   -moz-transition: -moz-transform 0.4s 0s, box-shadow 0s 0.4s;
-  transition: transform 0.4s 0s, box-shadow 0s 0.4s;
+  transition: transform 0.6s 0s, box-shadow 0s 0.4s;
 }
 .cd-nav-container.is-visible {
   width: 200px;
@@ -261,7 +261,7 @@ xnavigation
   box-shadow: -4px 0 30px rgba(0, 0, 0, 0.2);
   -webkit-transition: -webkit-transform 0.4s 0s, box-shadow 0s 0s;
   -moz-transition: -moz-transform 0.4s 0s, box-shadow 0s 0s;
-  transition: transform 0.4s 0s, box-shadow 0s 0s;
+  transition: transform 0.6s 0s, box-shadow 0s 0s;
 }
 .cd-nav-container header {
   padding: 1.5em 0 0 6.25%;
@@ -754,15 +754,30 @@ main.scale-down {
   z-index: 2;
   overflow: hidden;
 }
-#owl-top .item.top-image-1 {
+#home {
+  background-color: #efeff1;
+  margin: 100px 0px;
+  height: 90vh;
+  background-image: url('../images/slider/emptyfloppy.png');
+  background-size: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* #home {
+  margin: 100px 0px;
+  height: 90vh;
+  background-image: url('../images/slider/smallera.png');
+  background-size: 100vw 100vh;
+} */
+/* #owl-top .item.top-image-1 {
   background-image: url('../images/slider/eyess.png');
 }
 #owl-top .item.top-image-2 {
   background-image: url('../images/slider/eyess.png');
 }
 #owl-top .item.top-image-3 {
-  background-image: url('../images/slider/eyess.png');
-}
+  background-image: url('../images/slider/3.jpg');
+} */
 
 #owl-top.owl-theme .owl-controls .owl-buttons .owl-prev {
   position: absolute;
@@ -1118,6 +1133,12 @@ a.top-button {
 .section-padding-top-bottom-small {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+/* /// modified for hero text/// */
+#homePadding {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 100px;
 }
 .section-padding-top-bottom {
   padding-top: 100px;
