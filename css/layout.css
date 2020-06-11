@@ -415,9 +415,9 @@ xnavigation
   background-color: #000;
 }
 
-.cd-nav li a.mPS2id-highlight {
+/* .cd-nav li a.mPS2id-highlight {
   background-color: #000;
-}
+} */
 .cd-nav li a.mPS2id-highlight span,
 .cd-nav li a.mPS2id-highlight em {
   color: #16a085;
@@ -1621,6 +1621,7 @@ a.top-button {
   text-align: center;
 }
 #filter {
+  display: inline;
   position: relative;
   width: 100%;
   text-align: center;
