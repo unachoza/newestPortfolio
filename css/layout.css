@@ -497,7 +497,7 @@ xshadow layer
   /* shadow layer visible when navigation is open */
   position: fixed;
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   top: 0;
   left: 0;
   cursor: pointer;
@@ -511,7 +511,7 @@ xshadow layer
   transition: opacity 0.4s 0s, visibility 0s 0.4s;
 }
 .cd-overlay.is-visible {
-  /* opacity: 1; */
+  opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.4s 0s, visibility 0s 0s;
   -moz-transition: opacity 0.4s 0s, visibility 0s 0s;
