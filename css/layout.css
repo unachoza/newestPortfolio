@@ -251,7 +251,7 @@ xnavigation
   transition: transform 0.4s 0s, box-shadow 0s 0.4s;
 }
 .cd-nav-container.is-visible {
-  width: 500px;
+  width: 200px;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -268,13 +268,28 @@ xnavigation
   height: 68px;
   position: relative;
 }
-
 @media only screen and (min-width: 700px) {
+  .cd-nav-container.is-visible {
+    width: 40vw;
+  }
   .cd-nav-container {
     width: 70%;
   }
   .cd-nav-container header {
-    height: 116px;
+    height: 80px;
+    padding-top: 3em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .cd-nav-container.is-visible {
+    width: 300px;
+  }
+  .cd-nav-container {
+    width: 100%;
+  }
+  .cd-nav-container header {
+    height: 80px;
     padding-top: 3em;
   }
 }
@@ -355,23 +370,22 @@ xnavigation
   display: table;
 }
 .cd-nav li {
-  width: 50%;
+  width: 100%;
   float: left;
   /* 68px is the navigation header height  and the menu items will be allocated in 3 rows */
-  height: calc((100vh - 68px) / 3);
+  height: calc((100vh - 150px) / 6);
   min-height: 120px;
+  border: 1px solid red;
   border: 1px solid #ffffff;
   border-top: none;
   border-left: none;
 }
-.cd-nav li:nth-of-type(2n) {
-  border-right-width: 0;
-}
+
 .cd-nav a {
   position: relative;
   display: block;
-  width: 100%;
-  height: 50%;
+  width: 70%;
+  height: 100%;
   text-align: center;
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
@@ -380,7 +394,7 @@ xnavigation
 .cd-nav li a span {
   font-family: 'Ionicons';
   color: #212121;
-  font-size: 50px;
+  font-size: 40px;
 }
 .cd-nav li a:hover span {
   color: #16a085;
@@ -438,9 +452,9 @@ xnavigation
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 14px;
-  line-height: 23px;
+  /* letter-spacing: 2px; */
+  font-size: 13px;
+  /* line-height: 23px; */
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   transition: color 0.2s;
@@ -453,16 +467,16 @@ xnavigation
 @media only screen and (min-width: 700px) {
   .cd-nav li {
     /* 116px is the navigation header height and the menu items will be allocated in 3 rows */
-    width: 20vw;
-    height: calc((100vh - 116px) / 6);
+    width: 40vw;
+    height: calc((100vh - 80px) / 6);
     /* min-height: 200px; */
   }
 }
 @media only screen and (min-width: 1024px) {
   .cd-nav li {
-    width: 20vw;
+    width: 300px;
     float: left;
-    height: calc((100vh - 116px) / 6);
+    height: calc((100vh - 80px) / 6);
     /* 116px is the navigation header height  and the menu items will be allocated in 2 rows */
     /* min-height: 250px; */
   }
@@ -497,7 +511,7 @@ xshadow layer
   transition: opacity 0.4s 0s, visibility 0s 0.4s;
 }
 .cd-overlay.is-visible {
-  opacity: 1;
+  /* opacity: 1; */
   visibility: visible;
   -webkit-transition: opacity 0.4s 0s, visibility 0s 0s;
   -moz-transition: opacity 0.4s 0s, visibility 0s 0s;
