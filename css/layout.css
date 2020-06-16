@@ -2857,6 +2857,31 @@ figure.youtube a img {
 #owl-quotes.owl-theme .owl-controls .owl-page span {
 	background: #fff;
 }
+#meImgs {
+	height: 450px;
+	z-index: 50;
+	float: right;
+}
+.about-me {
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 200px;
+}
+.bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.2;
+	overflow: hidden;
+}
+.bg-video__content {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
 .quote-about {
 	position: relative;
 	width: 100%;
