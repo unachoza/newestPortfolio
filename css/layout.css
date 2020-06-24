@@ -611,12 +611,6 @@ main.scale-down {
 	line-height: 1.1;
 }
 
-#flop {
-	width: 40%;
-	margin: 0 auto;
-	margin-top: -33px;
-	display: inherit;
-}
 /* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
 	#flop {
 		width: 121%;
@@ -635,6 +629,18 @@ main.scale-down {
 		padding-bottom: 100px;
 	}
 } */
+#cloud {
+	margin-left: 100px;
+}
+
+@media only screen and (max-device-width: 1250px) {
+	#cloud {
+		display: none;
+	}
+	video {
+		display: none;
+	}
+}
 
 @media only screen and (min-device-width: 315px) and (max-device-width: 812px) {
 	#flop {
@@ -2918,9 +2924,7 @@ figure.youtube a img {
 	float: right;
 }
 .about-me {
-	width: 900px;
-	margin: 0 auto;
-	padding-bottom: 200px;
+	margin: 200px 0px 200px 0px;
 }
 .bg-video {
 	position: absolute;
