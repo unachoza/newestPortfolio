@@ -598,6 +598,34 @@ main.scale-down {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+#portfolio-title {
+	font-size: 60px;
+	margin: -120px 0px 5px 0px;
+	line-height: 1.1;
+}
+#portfolio-sub-title {
+	margin-top: 130px;
+	font-size: 60px;
+	line-height: 0.8;
+}
+
+#flop {
+	width: 40%;
+	margin: 0 auto;
+	margin-top: -33px;
+	display: inherit;
+}
+@media only screen and (max-device-width: 420px) {
+	#flop {
+		width: 110%;
+		margin: -30px 0px 0px -21px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	#flop {
+		width: 83%;
+	}
+}
 
 /* #Tooltip
 ================================================== */
@@ -736,7 +764,12 @@ main.scale-down {
 
 /* #Home
 ================================================== */
-
+#flop {
+	width: 40%;
+	margin: 0 auto;
+	margin-top: -28px;
+	display: inherit;
+}
 #owl-top {
 	position: relative;
 	width: 100%;
@@ -758,8 +791,7 @@ main.scale-down {
 #home {
 	background-color: #efeff1;
 	margin: 100px 0px;
-	height: 90vh;
-	background-image: url('../images/slider/emptyfloppy.png');
+	height: 100vh;
 	background-size: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
