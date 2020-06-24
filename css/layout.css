@@ -575,6 +575,13 @@ main.scale-down {
 	background-position: center center;
 	position: relative;
 }
+#flop {
+	width: 40%;
+	margin: 0 auto;
+	margin-top: -33px;
+	display: inherit;
+}
+
 @media only screen and (min-width: 700px) {
 	.cd-section {
 		/* not 100vh to fix a small bug --> border visible otherwise */
@@ -603,11 +610,6 @@ main.scale-down {
 	margin: -120px 0px 5px 0px;
 	line-height: 1.1;
 }
-#portfolio-sub-title {
-	margin-top: 130px;
-	font-size: 60px;
-	line-height: 0.8;
-}
 
 #flop {
 	width: 40%;
@@ -615,10 +617,40 @@ main.scale-down {
 	margin-top: -33px;
 	display: inherit;
 }
-@media only screen and (max-device-width: 420px) {
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
 	#flop {
-		width: 110%;
-		margin: -30px 0px 0px -21px;
+		width: 121%;
+		margin: 20px -11px 5px -37px;
+	}
+	#portfolio-title {
+		letter-spacing: -1px;
+		font-size: 37px;
+	}
+	#home-padding {
+		padding-top: 230px;
+		padding-bottom: 100px;
+	}
+	.home-padding {
+		padding-top: 230px;
+		padding-bottom: 100px;
+	}
+} */
+
+@media only screen and (min-device-width: 315px) and (max-device-width: 812px) {
+	#flop {
+		width: 100%;
+	}
+	#portfolio-sub-title {
+		letter-spacing: -1px;
+		margin-top: 130px;
+		font-size: 31px;
+		line-height: 0.8;
+	}
+	#portfolio-title {
+		font-size: 42px;
+		margin: -120px 0px 5px 0px;
+		line-height: 1.1;
+		letter-spacing: 0px;
 	}
 }
 @media only screen and (min-width: 768px) {
@@ -764,12 +796,7 @@ main.scale-down {
 
 /* #Home
 ================================================== */
-#flop {
-	width: 40%;
-	margin: 0 auto;
-	margin-top: -28px;
-	display: inherit;
-}
+
 #owl-top {
 	position: relative;
 	width: 100%;
@@ -1168,11 +1195,7 @@ a.top-button {
 	padding-bottom: 60px;
 }
 /* /// modified for hero text/// */
-#homePadding {
-	padding-top: 30px;
-	padding-left: 15px;
-	padding-bottom: 100px;
-}
+
 .section-padding-top-bottom {
 	padding-top: 100px;
 	padding-bottom: 100px;
