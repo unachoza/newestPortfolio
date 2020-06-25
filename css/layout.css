@@ -611,24 +611,24 @@ main.scale-down {
 	line-height: 1.1;
 }
 
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
 	#flop {
 		width: 121%;
 		margin: 20px -11px 5px -37px;
 	}
-	#portfolio-title {
-		letter-spacing: -1px;
-		font-size: 37px;
-	}
+
 	#home-padding {
-		padding-top: 230px;
+		height: 85vh;
+		display: flex;
+		align-items: center;
+		padding-top: 100px;
 		padding-bottom: 100px;
 	}
 	.home-padding {
 		padding-top: 230px;
 		padding-bottom: 100px;
 	}
-} */
+}
 #cloud {
 	margin-left: 100px;
 }
@@ -824,7 +824,7 @@ main.scale-down {
 #home {
 	background-color: #efeff1;
 	margin: 100px 0px;
-	height: 100vh;
+	height: 78vh;
 	background-size: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
