@@ -628,7 +628,7 @@
 ================================================== */
 @media only screen and (min-device-width: 370px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
 	.container {
-		border: solid red 3px;
+		/* border: solid red 3px; */
 		width: 236px;
 	}
 }
